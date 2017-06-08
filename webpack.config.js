@@ -13,7 +13,9 @@ const common = {
   entry: {
     vendor: [
       'whatwg-fetch',
-      'babel-polyfill'
+      'babel-polyfill',
+      'react-dom',
+      'react'
     ],
     app: SRC_PATH
   },
@@ -71,6 +73,7 @@ const common = {
 const development = {
   entry: {
     vendor: [
+      'react-hot-loader/patch',
       'webpack-dev-server/client?http://localhost:8080',
       'webpack/hot/only-dev-server'
     ]

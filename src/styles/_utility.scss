@@ -15,7 +15,8 @@ $base-font-family: sans-serif;
 @mixin full-height {
   height: 100%;
 
-  body {
+  body,
+  #root {
     min-height: 100%;
   }
 }
