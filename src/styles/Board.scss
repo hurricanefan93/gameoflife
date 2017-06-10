@@ -1,0 +1,19 @@
+.component-board {
+  background-color: fdefde;
+  color: black;
+  display: block;
+  height: 90vh;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+table {
+  padding: 5px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+
+  td {
+    height: 20px;
+    width: 20px;
+  }
+}
