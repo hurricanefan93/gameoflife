@@ -1,3 +1,5 @@
+@import 'utility';
+
 .component-board {
   background-color: fdefde;
   color: black;
@@ -8,11 +10,12 @@
 }
 
 table {
-  padding: 5px;
-  margin: 0 auto;
-  padding-bottom: 60px;
+  animation: fadeIn 0.8s ease-in;
+  margin: 10px auto;
+  box-shadow: 4px 4px 4px grey;
 
   td {
+    transition: 0.2s ease;
     height: 20px;
     width: 20px;
   }

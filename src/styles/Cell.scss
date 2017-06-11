@@ -1,16 +1,16 @@
 .cell {
   width: 10px;
   height: 10px;
-  background-color: lightseagreen;
+  background-color: aquamarine;
   border-radius: 8px;
 }
 
 .alive {
-  background-color: darkblue;
+  background-color: teal;
 }
 
 .dead {
-  background-color: lightseagreen;
+  background-color: aquamarine;
 }
 
 .cell:hover {

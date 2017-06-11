@@ -164,8 +164,6 @@ class App extends Component {
       <div className='App'>
         <div className='Header'>
           <h1>Game Of Life</h1>
-        </div>
-        <div className='App-intro'>
           <ControlPad
             runGame={this.runGame}
             pauseGame={this.pauseGame}
@@ -174,6 +172,8 @@ class App extends Component {
             nextGen={this.nextGeneration}
             clearBoard={this.clearBoard}
           />
+        </div>
+        <div className='App-intro'>
           <Board
             numRows={this.state.rows}
             numCols={this.state.cols}
