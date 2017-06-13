@@ -124,7 +124,6 @@ class App extends Component {
         if (arr[i][j]) {
           if (count < 2 || count > 3) {
             arr[i][j] = false
-            // console.log("Cell: "+ i + ","+ j +  " has "+ count+ " neighbors and will die")
           }
         } else {
           // if cell is dead do this check (rule 4)

@@ -31,12 +31,4 @@ class Board extends Component {
   }
 }
 
-// Board.propTypes = {
-//   numRows: React.PropTypes.number,
-//   numCols: React.PropTypes.number,
-//   currentGen: React.PropTypes.array,
-//   // living: React.PropTypes.bool,
-//   toggleCell: React.PropTypes.func
-// }
-
 export default Board
