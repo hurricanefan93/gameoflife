@@ -3,13 +3,24 @@
 @import 'Board';
 
 html {
-  @include full-height;
+  height: 100vh;
 }
 
 body {
-  min-height: 100%;
+  height: 100vh;
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/de/ea/8d/deea8d07022423decf55fd7fe2630eea.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @include full-height;
+}
+
+.App-intro {
+  height: 100vh;
 }
 
 .Header {
@@ -17,6 +28,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 .ControlPad {
@@ -30,7 +42,7 @@ body {
     margin-bottom: 10px;
     height: 40px;
     min-width: 100px;
-    background: $button-bg-color;
+    background: lighten($button-bg-color, 10%);
     border: none;
     outline: none;
     color: white;
@@ -38,14 +50,14 @@ body {
     font-weight: 400;
     font-size: 20px;
     border-radius: 3px;
-    box-shadow: 0 5px darken($button-bg-color, 0%);
-    border-bottom: 2px solid darken($button-bg-color, 3%);
+    box-shadow: 0 5px darken($button-bg-color, 2%);
+    border-bottom: 2px solid darken($button-bg-color, 5%);
 
     &:hover {
       background: darken($button-bg-color, 5%);
       box-shadow: 0 4px 1px darken($button-bg-color, 5%);
       border-bottom: 2px solid darken($button-bg-color, 8%);
-      transition: all 0.5s ease-in;
+      transition: all 0.2s ease-in;
     }
 
     &:active {
